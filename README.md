@@ -24,7 +24,7 @@ Laporan ini menjelaskan langkah-langkah pembuatan master dan slave, konfigurasi 
 5. Code Bubble Sort Python
 
 ## Topologi Bridged
-![Topologi](https://github.com/dikiriskiyanto/Numerik-Pemrosesan-Paralel/raw/main/Topologi.png)
+![Topologi](https://github.com/FakhriNaufal25/Laporan-Numerik-Solutions__Pemrosesan-Parallel/blob/main/Topologi%20Numerik.png)
 
 ## Pembuatan Master dan Slave
 
@@ -36,7 +36,7 @@ Laporan ini menjelaskan langkah-langkah pembuatan master dan slave, konfigurasi 
     sudo adduser mpiuser
     ```
 
-    Gantilah bagian 'master' menjadi 'slave1', 'slave2', dan seterusnya untuk slave.
+    Buat user yang sama disetiap devicenya
 
 4. Berikan akses kepada root dengan perintah:
 
@@ -157,7 +157,7 @@ Laporan ini menjelaskan langkah-langkah pembuatan master dan slave, konfigurasi 
     ```
 
 2. Edit file Python (misalnya `num.py`) dengan code numerik.
-   [num.py code](https://github.com/dikiriskiyanto/Numerik-Pemrosesan-Paralel-kel3/blob/main/num.py)
+   [num.py code](https://github.com/FakhriNaufal25/Laporan-Numerik-Solutions__Pemrosesan-Parallel/blob/main/Numerik.py)
 
 3. Jalankan kodingan Python tanpa MPI:
 
@@ -170,5 +170,5 @@ Laporan ini menjelaskan langkah-langkah pembuatan master dan slave, konfigurasi 
     ```bash
     mpirun -np 3 -hosts master,slave1,slave2 python3 num.py
     ```
-   ![Output](https://github.com/dikiriskiyanto/Numerik-Pemrosesan-Paralel/raw/main/ouput.png)
+   ![Output](https://github.com/FakhriNaufal25/Laporan-Numerik-Solutions__Pemrosesan-Parallel/blob/main/ouput.png)
    Hasil eksekusi akan ditampilkan dengan runtime yang diukur.
